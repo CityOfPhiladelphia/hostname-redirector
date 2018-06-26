@@ -13,9 +13,6 @@ Responds with a `301 Moved Permanently` redirect to:
 https://www.phila.gov/departments/revenue/
 ```
 
-Note that this function includes special logic to check if the original
-request domain ends in `.website`, so that a request to `beta.phila.website` will be redirected to `www.phila.website`. This enables us to test this prior to go-live without having two separate lambda functions.
-
 ## Deployment
 You can manually paste this into the Lambda console, deploy a new version,
 and then associate the cloudfront distribution with the new version. Alternatively,

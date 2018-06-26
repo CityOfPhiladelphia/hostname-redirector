@@ -1,15 +1,11 @@
+const NEW_HOSTNAME = 'https://www.phila.website'
+
 exports.handler = async function handler (event) {
   const request = event.Records[0].cf.request
-  const hostname = request.headers.host[0].value
   const pathname = request.uri
+  const newUrl = NEW_HOSTNAME + pathname
 
-  const newOrigin = (hostname.endsWith('.website'))
-    ? 'https://www.phila.website'
-    : 'https://www.phila.gov'
-
-  const newUrl = newOrigin + pathname
-
-  console.log(hostname, pathname, '->', newUrl)
+  console.log(pathname, '->', newUrl)
   return createRedirect(newUrl, 301)
 }
 
