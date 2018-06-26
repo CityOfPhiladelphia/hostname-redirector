@@ -1,0 +1,11 @@
+{
+  "name": "hostname-redirector",
+  "version": "0.1.0",
+  "description": "Lambda@Edge function for redirecting requests to another hostname",
+  "main": "index.js",
+  "author": "City of Philadelphia",
+  "license": "MIT",
+  "devDependencies": {
+    "claudia": "^5.0.0"
+  }
+}

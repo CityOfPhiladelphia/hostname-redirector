@@ -1,0 +1,7 @@
+{
+  "lambda": {
+    "role": "hostname-redirector-executor",
+    "name": "hostname-redirector",
+    "region": "us-east-1"
+  }
+}
