@@ -20,7 +20,7 @@ assuming `claudia.json` matches the function name and role you're targeting, use
 [claudia.js](https://claudiajs.com/):
 
 ```
-npx claudia update --version dev
-npx claudia set-cloudfront-trigger --distribution-id XXXXXX --event-types origin-request --version dev
+npx claudia update --version VERSION_ALIAS
 ```
-Claudia will convert `dev` to a numeric version number and tag the version with `dev`.
+
+Replace `VERSION_ALIAS` with `phila-website` or `phila-gov` (convention for easy reference). Claudia will convert the version alias to a numeric version number and tag it.
